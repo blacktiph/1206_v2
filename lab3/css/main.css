@@ -1,0 +1,168 @@
+/*---------- Reset Settings ----------*/
+
+body, h1, h2, h3, #nav, ul {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	border: none;
+}
+
+/*---------- Basic Elements ----------*/
+h2 {
+	margin: 10px 0;
+	color: #e1dcda;
+	letter-spacing: 1px;
+	text-shadow: 0 1px 1px #0a0908;
+	-moz-text-shadow: 0 1px 1px #0a0908;
+	font-family: 'Salsa', cursive;
+}
+
+h3 {
+	margin: 6px 0;
+}
+
+/*---------- Structure ----------*/
+
+body {
+	font: normal 62.5%/1.5 arial, helvetica, sans-serif;
+	background: #d89c60;
+}
+
+#main-content {
+	background: url('../img/safari.png') no-repeat top center;
+	margin: 0 auto;
+	max-width: 960px;
+	font-size: 1.4em;
+	color: #D8C4AF;
+}
+
+#body_wrapper {
+	background: #332520;
+	padding: 10px 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+/*---------- Header ----------*/
+
+#header {
+	margin-bottom: 64px;
+}
+
+h1 {
+	width: 163px;
+	height: 100px;
+	text-indent: -99999px;
+	background: url('../img/ligers_h1.png') no-repeat top left;
+}
+
+/*----- Navigation -----*/
+
+#nav {
+	overflow: hidden;
+	font: bold 20px/1.5 'Salsa', cursive;
+	display: block;
+	float: right;
+	margin-top: 30px;
+	text-shadow: 0 1px 1px #0a0908;
+	-moz-text-shadow: 0 1px 1px #0a0908;
+}
+
+#nav li {
+	float: left;
+	list-style: none;
+	margin-right: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+
+#nav li:first-child {
+	padding-left: 10px;
+}
+
+#nav li a {
+	color: #efe5c6;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px;
+}
+
+#nav a:hover {
+	color: #5e4b08;
+	text-shadow: 0 1px 1px #efe5c6;
+	-moz-text-shadow: 0 1px 1px #efe5c6;
+}
+
+/*---------- Body Content ----------*/
+
+#body_content {
+	float: left;
+	width: 600px;
+}
+
+#sidebar {
+	margin-left: 620px;
+	width: 260px;
+	padding: 10px 20px;
+	margin-top: 21px;
+	background: #c2b07d;
+	color: #332520;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#sidebar li {
+	list-style: inside;
+}
+
+#sidebar h2 {
+	color: #efe7e4;
+	font-family: 'Belgrano', serif;
+}
+
+#colors {
+	clear: left;
+}
+
+/*----- Gallery -----*/
+
+#gallery {
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+#gallery li {
+	list-style: none;
+	float: left;
+	line-height: 0;
+	margin-left: 10px;
+}
+
+#gallery li:first-child {
+	margin-left: 0;
+}
+
+#gallery li a {
+	border: 3px solid #fff;
+	display: block;
+}
+
+#gallery li a:hover {
+	opacity: 0.5;
+	border: 3px solid #a0a0a0;
+}
+
+/*---------- Footer ----------*/
+
+footer {
+	clear: left;
+	font-size: 11px;
+	text-align: center;
+}
