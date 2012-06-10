@@ -1,0 +1,111 @@
+/*---------- Resets ----------*/
+
+body, nav, nav ul, h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #8DDBE7; /* Light blue color from Tron */
+}
+
+/*---------- Fonts ----------*/
+
+/*@font-face {
+	font-family: megatron;
+	src: url('../fonts/megatron.ttf');
+}*/
+
+/*---------- Structure ----------*/
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+#glowing_line {
+	background: url('../images/glowing_line.png') repeat-x;
+	position: absolute;
+	width: 100%;
+	top: 40px;
+}
+
+#wrapper {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*---------- Header ----------*/
+
+header {
+	height: 50px;
+	padding-top: 10px;
+}
+
+header h1 {
+	float: left;
+/*	font-family: megatron, sans-serif;*/
+	color: #33EFFA;
+}
+}
+
+/*---------- Navigation ----------*/
+
+nav {
+	overflow: hidden;
+	width: 465px;
+}
+nav li {
+	float: left;
+	list-style: none;
+	width: 155px;
+}
+nav a {
+	text-indent: -99999px;
+	background: url('../images/main_nav_spry.png') no-repeat 0 0;
+	display: block;
+	height: 41px;
+}
+
+/*----- Products -----*/
+#products:hover {
+	background-position: 0 -44px;
+}
+
+#products:active {
+	background-position: 0 -89px;
+}
+
+/*----- Shop -----*/
+#shop:link {
+	background-position: -155px 0;
+}
+
+#shop:hover {
+	background-position: -155px -44px;
+}
+
+#shop:active {
+	background-position: -155px -89px;
+}
+
+/*----- Supports -----*/
+#supports:link {
+	background-position: -310px 0;
+}
+
+#supports:hover {
+	background-position: -310px -44px;
+}
+
+#supports:active {
+	background-position: -310px -89px;
+}
+
+/*---------- Header ----------*/
+
+footer {
+	font-size: 10px;
+	text-align: center;
+}
+
