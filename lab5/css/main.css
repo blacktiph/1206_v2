@@ -1,0 +1,367 @@
+/* Color Palette 
+
+#332520 - Dark Brown
+#D89C60 - Safari Brown
+#C2B07D - Lighter Brown
+
+*/
+
+/* Comments for Responsive Percentages
+
+A - If you include both left and right margins of 20px for #body_wrapper, you get 920px.
+
+*/
+
+/*---------- Reset Settings ----------*/
+
+body, h1, h2, h3, #nav, ul {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%; /* Resizes images */
+}
+
+/*---------- Structure ----------*/
+
+body {
+	font: normal 62.5%/1.5 arial, helvetica, sans-serif; /* Font Reset */
+	background: #d89c60;
+}
+
+#main-content {
+	background: url('../img/safari.png') no-repeat top center;
+	margin: 0 auto;
+	font-size: 1.4em; /* 14px / 10px */
+	color: #D8C4AF;
+	max-width: 960px;
+}
+
+#body_wrapper {
+	background: #332520;
+	padding: 1.04166667% 2.08333333%; /* 10px/960px, 20px/960px */
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+/*---------- Header ----------*/
+
+#header {
+	margin-bottom: 64px;
+	height: 100px;
+}
+
+h1 {
+	width: 16.9791667%; /* 163px / 960px */
+	height: 100px;
+	text-indent: -1000%; /* -9999px / 960px */
+	background: url('../img/ligers_h1.png') no-repeat top left;
+	float: right;
+	margin-right: 41.3541667%; /* 397px / 960px */
+}
+
+/*----- Navigation -----*/
+
+#nav {
+	float: right;
+	overflow: hidden;
+	font: bold 1.42857143em/1.5 'Salsa', cursive; /* 20px / 14px */
+	display: block;
+	margin-top: 30px;
+	text-shadow: 0 0.0714285714em 0.0714285714em #0a0908; /* 1px/14px */
+	-moz-text-shadow: 0 0.0714285714em 0.0714285714em #0a0908; /* 1px/14px */
+	width: 41.6666667%; /* 400px / 960px */
+}
+
+#nav li {
+	float: left;
+	list-style: none;
+	margin-right: 5%; /* 20px / 400px */
+	height: 35px;
+	line-height: 35px;
+}
+
+#nav li:last-child {
+	margin-right: 0;
+}
+
+#nav li a {
+	color: #efe5c6;
+	text-align: center;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #5e4b08;
+	text-shadow: 0 0.0714285714em 0.0714285714em #efe5c6; /* 1px/14px */
+	-moz-text-shadow: 0 0.0714285714em 0.0714285714em #efe5c6; /* 1px/14px */
+}
+
+/*---------- Body Content ----------*/
+
+#body_content {
+	float: left;
+	width: 65.2173913%; /* 600px / 920px (A) */
+	margin-right: 2.17391304%; /* 20px / 920px */
+}
+
+h2 {
+	margin: 10px 0;
+	font-size: 1.42857143em; /* 20px / 14px */
+	color: #e1dcda;
+	letter-spacing: 0.05em; /* 1px / 20px */
+	text-shadow: 0 0.05em 0.05em #0a0908; /* 1px / 20px */
+	-moz-text-shadow: 0 0.05em 0.05em #0a0908; /* 1px / 20px */
+	font-family: 'Salsa', cursive;
+}
+
+#sidebar {
+	float: left;
+	width: 28.2608696%; /* 260px / 920px */
+	padding: 10px 2.17391304%; /* 20px / 920px */
+	margin-top: 21px;
+	background: #c2b07d;
+	color: #332520;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#sidebar li {
+	list-style: inside;
+}
+
+#sidebar h2 {
+	color: #efe7e4;
+	font-family: 'Belgrano', serif;
+}
+
+#sidebar h3 {
+	margin: 6px 0;
+}
+
+#colors {
+	clear: left;
+}
+
+/*----- Gallery -----*/
+
+#gallery {
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+#gallery li {
+	list-style: none;
+	float: left;
+	line-height: 0;
+	margin-top: 1.66666667%; /* 10px / 600px */
+	margin-right: 1.66666667%; /* 10px / 600px */
+}
+
+#gallery li:last-child {
+	margin-right: 0;
+}
+
+#gallery li a {
+	border: 3px solid #fff;
+	display: block;
+}
+
+#gallery li a:hover {
+	opacity: 0.5;
+	border: 3px solid #a0a0a0;
+}
+
+/*---------- Footer ----------*/
+
+footer {
+	clear: left;
+	font-size: 1.1em; /* 11px / 10px */
+	text-align: center;
+}
+
+/*--------------------------------------------------------------------------------
+	Media Queries
+--------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	h1 {
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	#nav {
+		float: left;
+		margin-left: 70.8333333%; /* 680px / 960px */
+		width: 31.25%; /* 300px / 960px */
+		margin-top: 15px;
+	}
+
+	#nav li {
+		margin-right: 10%; /* 30px / 250px */
+	}
+
+	#nav li:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	#main-content {
+		background-position: 0 0;
+	}
+}/* END 758px-959px */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+	h1 {
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	#main-content {
+		background-position: 0 0;
+	}
+
+	#body_content, #colors {
+		float: none;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	#nav {
+		float: left;
+		margin: 170px 2.5% 10px 2.5%;
+		width: 95%;
+	}
+
+	#nav li {
+		margin-right: 5%; /* 10px / 250px */
+	}
+
+	#nav a:hover {
+		color: #efe5c6;
+		text-shadow: 0 0.0714285714em 0.0714285714em #0a0908; /* 1px/14px */
+		-moz-text-shadow: 0 0.0714285714em 0.0714285714em #0a0908; /* 1px/14px */
+	}
+
+	#body_wrapper {
+		padding: 10px 0; /* 20px/960px */
+	}
+
+	#gallery li a:hover {
+		opacity: 1.0;
+		border: 3px solid #fff;
+	}
+}/* END 481px-767px */
+
+@media screen and (max-width: 480px) {
+	#main-content {
+		background-position: 100% 0;
+		padding-top: 165px;
+	}
+
+	#header {
+		margin: 0;
+		background: #332520;
+		height: 0;
+	}
+
+	h1 {
+		position: absolute;
+		top: 0;
+		width: 65%;
+		left: 35%;
+	}
+
+	#nav {
+		width: 95%;
+		letter-spacing: 0.0457em;
+		margin: 0 auto 15px;
+	}
+
+	#nav li {
+		height: 30px;
+		float: left;
+	}
+
+	#nav a:hover {
+		color: #efe5c6;
+		text-shadow: 0 0.0714285714em 0.0714285714em #0a0908; /* 1px/14px */
+		-moz-text-shadow: 0 0.0714285714em 0.0714285714em #0a0908; /* 1px/14px */
+	}
+
+	#body_content, #colors {
+		float: none;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	#gallery li a:hover {
+		opacity: 1.0;
+		border: 3px solid #fff;
+	}
+
+	footer {
+		width: 90%;
+		margin: 0 auto;
+	}
+}/* END 480px */
+
+@media screen and (max-width: 479px) {
+	#main-content {
+		background-position: 100% 0;
+	}
+
+	h1 {
+		position: absolute;
+		width: 75%;
+		left: 25%;
+	}
+
+	#nav {
+		float: none;
+		margin-left: 5%;
+		overflow: visible;
+	}
+	#nav li {
+		float: none;
+		margin: 0 0 5px 0;
+	}
+
+	#body_content, #colors {
+		float: none;
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#body_content {
+		margin-top: 150px;
+	}
+
+	#sidebar {
+		display: none;
+	}
+
+	#gallery li:last-child {
+		margin-right: 12.08768267%; /* 10px / 479px */
+	}	
+
+	#gallery li a:hover {
+		opacity: 1.0;
+		border: 3px solid #fff;
+	}
+}/* END 479px */
