@@ -1,0 +1,189 @@
+/*----- Reset -----*/
+
+body, h1, fieldset, ul, select, .log-in {
+	margin: 0;
+	padding: 0;
+}
+
+/*---------- Basic Elements ----------*/
+
+h1 {
+	color: #3a4956;
+	margin-bottom: 10px;
+	font-family: 'Fondamento', cursive;
+	font-size: 28px; /* 28px / 10px/ */
+	text-shadow: 0 1px 1px #fff;
+	border-bottom: 3px solid #3a4956;
+}
+
+fieldset {
+	border: none;
+	color: #3a3930;
+}
+
+.log-in {
+	font-size: 12px;
+}
+
+strong {
+	color: #3A4956;
+}
+
+/*---------- Structure ----------*/
+
+body {
+	background: url('../images/light_paper.png');
+	font: 62.5%/1.5 arial, helvetica, sans-serif;
+}
+
+#container {
+	width: 960px;
+	margin: 10px auto;
+}
+
+#container-inner {
+	width: 320px;
+	padding: 10px 15px;
+	margin: 0 auto;
+	background: url('../images/clean_textile.png');
+	-moz-box-shadow: 0 0 4px #262626;
+	-webkit-box-shadow: 0 0 4px #262626;
+	box-shadow: 0 0 4px #262626;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/*---------- Form Design ----------*/
+
+form {
+	font-size: 1.4em;
+}
+
+label, input {
+	display: block;
+}
+
+input, select {
+	margin: 3px 0 10px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 313px;
+	height: 20px;
+	border-width: 1px;
+	padding-left: 5px;
+}
+
+label, legend {
+	font: 16px 'Pontano Sans', sans-serif;
+}
+
+/*----- Profile Link -----*/
+
+#field-profile-link span {
+	color: #468FD7;
+}
+
+/*----- Birth Date -----*/
+
+#section-dob div {
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+}
+
+#section-dob label {
+	font-size: 1em;
+	color: #737373;
+}
+
+select option:first-child {
+	font-weight: bold;
+}
+
+#section-dob em {
+	clear: left;
+	font-size: 0.8em;
+	display: block;
+}
+
+/*----- Terms of Service -----*/
+
+#field-agree-tos {
+	margin: 15px 0;
+}
+
+#field-agree-tos ul {
+	list-style: none;
+	overflow: hidden;
+	height: 20px;
+	line-height: 20px;
+}
+
+#field-agree-tos input {
+	float: left;
+	margin-right: 10px;
+}
+
+#field-agree-tos label {
+	display: inline;
+	font-size: 0.9em;
+}
+
+/*----- CTA Button -----*/
+
+.controls {
+	margin-top: 15px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 5px 20px;
+	font-weight: bold;
+	font-size: 16px;
+	background: #3A4856;
+	color: #F3F3F3;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: none;
+}
+
+input[type="submit"]:hover {
+	background: #468fd7;
+	cursor: pointer;
+}
+
+/*----- Placeholders -----*/
+
+input[name="email"] {
+	background: #fff url('../images/email_placeholder.png') no-repeat 5px 4px;
+}
+
+input[name="email"]:active, input[name="email"]:focus {
+	background-image: none;
+}
+
+input[type="password"] {
+	background: #fff url('../images/password_placeholder.png') no-repeat 5px 8px;
+}
+
+input[type="password"]:active, input[type="password"]:focus {
+	background-image: none;
+}
+
+input[name="profile_link"] {
+	background: #fff url('../images/profile_placeholder.png') no-repeat 5px 4px;
+}
+
+input[name="profile_link"]:active, input[name="profile_link"]:focus {
+	background-image: none;
+}
+
+/*----- Focus "Fix" -----*/
+
+input[type="text"]:focus, input[type="password"]:focus {
+	border: 2px solid #6bb8e5;
+	box-shadow: 0 0 2px #6bb8e5;
+	width: 311px;
+	height: 18px;
+}
